@@ -1,0 +1,245 @@
+<% include partials/header %>
+
+<div id="introBox">
+    <video preload="true" autoplay loop autobuffer muted playsinline id="video-size">
+        <source src="/public/videos/DigitalHD.mp4" type="video/mp4">
+        <source src="/public/videos/DigitalHD.webm" type="video/webm">
+    </video>
+
+    <div id="introCenter" class="d-flex justify-content-center">
+        <div id="introTop">
+            <a href="#aboutTitle" style="color: darkorange">About</a> 
+            <a href="#workTitleDesktop" style="color: blue">Work</a> 
+            <a href="#contactTitle" style="color: #57e255">Contact</a>
+        </div>
+        <div id="introMiddle">Wendy Monahan <span class="animate-flicker">|</span></div>
+        <p id="introBot">- Web Developer -</p>
+    </div>
+</div>
+
+<div class="infoWrap">
+    <div id="navBox" class="sticky-top d-flex justify-content-center">
+        <a href="#introBox" style="color: crimson">Home</a>
+        <p>&nbsp; -  &nbsp;</p>
+        <a href="#aboutTitle" style="color: darkorange">About</a>
+        <p>&nbsp; -  &nbsp;</p>
+        <a href="#workTitleDesktop" class="workLinkDesktop" style="color: #0000ff">Work</a>
+        <a href="#workTitleMobile" class="workLinkMobile" style="color: #0000ff">Work</a>
+        <p>&nbsp; -  &nbsp;</p>
+        <a href="#contactTitle" style="color: #57e255">Contact</a>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="container-fluid col-12 col-xl-6" id="aboutTitle">
+                <div class="aboutTitleText">About</div>
+            </div>
+            <div class="container-fluid col-12 col-xl-6" id="aboutContent">
+                <div class="aboutContentText">
+                    <p>
+                        I'm self-taught, Tennessee-raised, Web Developer moved out West to follow my passion for all things silicon. Currently working as a Hardware Technician, I'm driven to Software Development for new challenges and knowledge in my never-ending quest to understand more than I did yesterday.
+                    </p>
+                    <br>
+                    <p>Proficient Skills:</p>
+                    <p>[ HTML5 / CSS3 / Javascript, React.JS ]</p>
+                    <p>[ Node.js / Express / Bootstrap 4 ]</p>
+                    <p>[ DNS Management / Linux / Ngninx ]</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row no-gutters">
+        <div class="container col-12 col-xl-6 workContent workDesktop">
+            <div id="workBuffer" style="height: 4vh"></div>
+            <div class="test">
+                <div class="testInside">
+                    <div class="professional" id="professionalDesktop">
+                        <h1 class="workText workTextProfessional">[ Professional ]</h1>
+                        <div class="professionalZoom "></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="test">
+                <div class="testInside">
+                    <div class="projects" id="projectsDesktop">
+                        <h1 class="workText workTextProjects">[ Projects ]</h1>
+                        <div class="projectsZoom"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="test">
+                <div class="testInside">
+                    <div class="charity" id="charityDesktop">
+                        <h1 class="workText workTextCharity">[ Charity ]</h1>
+                        <div class="charityZoom"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid col-12 col-xl-6 workTitle workDesktop" id="workTitleDesktop">
+            <div class="workTitleText">Work</div>
+        </div>
+
+        <div class="container-fluid col-12 col-xl-6 workTitle workMobile" id="workTitleMobile">
+            <div class="workTitleText">Work</div>
+        </div>
+        <div class="container-fluid workContent workMobile text-center">
+            <div id="professionalMobile">
+                <div class="workMobileInside">
+                    <h1 class="workTextMobile">[ Professional ]</h1>
+                </div>
+            </div>
+            <div id="projectsMobile">
+                <div class="workMobileInside">
+                    <h1 class="workTextMobile">[ Projects ]</h1>
+                </div>
+            </div>
+            <div id="charityMobile">
+                <div class="workMobileInside">
+                    <h1 class="workTextMobile">[ Charity ]</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="container-fluid col-12 col-xl-6" id="contactTitle">
+                <div class="contactTitleText">Contact</div>
+            </div>
+            <div class="container-fluid col-12 col-xl-6" id="contactContent">
+                <div class="contactContentText">
+                    <br>
+                    <p>
+                        <a href="mailto:gwendolyn.monahan@gmail.com" style="color: #57e255">[ Email ]</a>
+                    </p>
+                    <br>
+                    <p style="color: #57e255">
+                        [ (253) 426-0369 ]
+                    </p>
+                    <br>
+                    <p>
+                        <a href="https://www.linkedin.com/in/wendy-monahan-a8654290/" style="color: #57e255">[ LinkedIn ]</a>
+                    </p>
+                    <br>
+                    <p>
+                        <a href="https://angel.co/windy-mountain" style="color: #57e255">[ AngelList ]</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- The Modal -->
+    <div id="professionalModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <div id="professionalModalPicture1"></div>
+                        <br>
+                        <p class="modalText text-center">
+                            A portfolio and artistic showcase for international model (and big brother) Cole Monahan. I made two carousels for the background and center-piece to display each set of photos in a variety of backgrounds in order to inspire different thoughts about the same photo.
+                        </p>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div id="professionalModalPicture2"></div>
+                        <br>
+                        <p class="modalText text-center">
+                            A website for an expanding organization that promotes mental health and community through agriculture.
+                        </p>
+                    </div>
+
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon leftArrow" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon rightArrow" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- The Modal -->
+    <div id="projectsModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div id="carouselProjects" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <div id="projectsModalPicture1">
+
+                        </div>
+                        <p class="modalText">
+                            A JavaScript game where you guess which square is the RGB value. Switch between Easy and Hard mode to change the amount of squares to choose from.
+                        </p>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div id="projectsModalPicture2">
+
+                        </div>
+                        <p class="modalText">
+                            WORK IN PROGRESS - An interactive character sheet for Dungeons & Dragons Fifth Edition that will automatically calculate dice rolls for Skills and Attacks based on a character's Stat values.
+                        </p>
+                    </div>
+
+                </div>
+                <a class="carousel-control-prev" href="#carouselProjects" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon leftArrow" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselProjects" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon rightArrow" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- The Modal -->
+    <div id="charityModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div id="carouselCharity" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <div id="charityModalPicture1">
+
+                        </div>
+                        <p class="modalText">
+                            A website for a non-profit organization based in Fremont County CO. They promotes mental health, STEAM education, and community through agriculture and exercise. I incorporated Google Calendar and MailChimp so those involved can easily keep up to date with their activities.
+                        </p>
+                    </div>
+
+                </div>
+                <a class="carousel-control-prev" href="#carouselCharity" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon leftArrow" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselCharity" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon rightArrow" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+<% include partials/footer %>

@@ -1,0 +1,59 @@
+
+
+<script>
+    // Get the modal
+    var modal1 = document.getElementById("professionalModal");
+    var modal2 = document.getElementById("projectsModal");
+    var modal3 = document.getElementById("charityModal");
+
+    // Get the button that opens the modal
+    var btn1 = document.getElementById("professionalDesktop");
+    var btn2 = document.getElementById("projectsDesktop");
+    var btn3 = document.getElementById("charityDesktop");
+    var btn4 = document.getElementById("professionalMobile");
+    var btn5 = document.getElementById("projectsMobile");
+    var btn6 = document.getElementById("charityMobile");
+
+
+    // When the user clicks the button, open the modal
+    btn1.onclick = function() {
+        modal1.style.display = "block";
+    }
+    btn2.onclick = function() {
+        modal2.style.display = "block";
+    }
+    btn3.onclick = function() {
+        modal3.style.display = "block";
+    }
+    btn4.onclick = function() {
+        modal1.style.display = "block";
+    }
+    btn5.onclick = function() {
+        modal2.style.display = "block";
+    }
+    btn6.onclick = function() {
+        modal3.style.display = "block";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal1) {
+            modal1.style.display = "none";
+        }
+
+         else if (event.target == modal2) {
+            modal2.style.display = "none";
+        }
+
+        else if (event.target == modal3) {
+            modal3.style.display = "none";
+        }
+    }
+
+</script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
