@@ -1,0 +1,535 @@
+html {
+    scroll-behavior: smooth;
+}
+
+#introBox {
+    position: relative;
+}
+
+#video-size {
+    width: 100%;
+    height: auto;
+}
+
+#introCenter {
+    position: absolute;
+    height: 40%;
+    width: 50%;
+    top: 32%;
+    left: 26%;
+    background-color: rgba(255, 91, 115, 0.0);
+    color: aliceblue;
+    text-shadow:
+            -4px -4px 4px #000000,
+            4px -4px 4px #000000,
+            -4px 4px 4px #000000,
+            4px 4px 4px #000000;
+}
+
+#introMiddle {
+    position: absolute;
+    top: 33%;
+    font-family: 'Turret Road', cursive;
+    font-size: 5vw;
+}
+
+#introTop {
+    position: absolute;
+    top: 21%;
+    font-family: 'Turret Road', cursive;
+    font-size: 2vw;
+}
+
+#introBot {
+    position: absolute;
+    bottom: 20%;
+    font-family: 'Turret Road', cursive;
+    font-size: 2vw;
+}
+
+@keyframes flickerAnimation {
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+}
+@-o-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+}
+.animate-flicker {
+    -webkit-animation: flickerAnimation 1s infinite;
+    -moz-animation: flickerAnimation 1s infinite;
+    -o-animation: flickerAnimation 1s infinite;
+    animation: flickerAnimation 1s infinite;
+}
+
+#navBox {
+    height: 5%;
+    width: 100%;
+    background-image: url("../images/Navbar3.jpg");
+    background-size: cover;
+    font-family: 'Turret Road', cursive;
+    font-size: 2vw;
+    color: aliceblue;
+    border: black solid 2px;
+}
+
+.workLinkDesktop {
+    display: block;
+}
+
+.workLinkMobile {
+    display: none;
+}
+
+#aboutTitle {
+    height: 100vh;
+    background-image: url("../images/About2.jpg");
+    background-size: cover;
+}
+
+#aboutContent {
+    height: 100vh;
+    background-color: #1f1f1f;
+}
+
+.aboutContentText {
+    margin-top: 10%;
+    margin-bottom: 4%;
+    margin-left: 4%;
+    margin-right: 4%;
+    font-family: 'Turret Road', cursive;
+    font-size: 2vw;
+    color: #57e255;
+}
+
+.workTitle {
+    height: 100vh;
+    background-image: url("../images/Work2.jpg");
+    background-size: cover;
+}
+
+.workDesktop {
+    display: block;
+}
+
+.workMobile {
+    display: none;
+}
+
+.workContent {
+    height: 100vh;
+    background-color: beige;
+}
+
+.workText {
+    visibility: hidden;
+    font-size: 5vw;
+    font-family: 'Turret Road', cursive;
+    color: aliceblue;
+    position: absolute;
+    padding-top: 6%;
+}
+
+.workTextProfessional {
+    padding-left: 10%;
+}
+
+.workTextProjects {
+    padding-left: 19%;
+}
+
+.workTextCharity {
+    padding-left: 21%;
+}
+
+.workTextMobile {
+    font-size: 10vw;
+    font-family: 'Turret Road', cursive;
+    color: aliceblue;
+    padding-top: 10vw;
+    text-shadow:
+            -4px -4px 4px #000000,
+            4px -4px 4px #000000,
+            -4px 4px 4px #000000,
+            4px 4px 4px #000000;
+}
+
+.professional {
+    height: 25vh;
+    overflow: hidden;
+    background-color: black;
+}
+
+#professionalMobile {
+    height: 28vh;
+    margin-top: 4vh;
+    border: #c0aa8f solid 3px;
+    border-radius: 25px;
+    background-color: #1f1f1f;
+}
+
+.professionalZoom {
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/ColeBigDesktop.jpg");
+    background-position: center;
+    background-size: cover;
+    transition: all .5s;
+}
+
+.professional:hover .professionalZoom {
+    transform: scale(1.2);
+    opacity: 0.1;
+}
+
+.professional:hover .workText {
+    visibility: visible;
+}
+
+.projects {
+    height: 24vh;
+    overflow: hidden;
+    background-color: black;
+}
+
+#projectsMobile {
+    height: 28vh;
+    margin-top: 4vh;
+    border: #c0aa8f solid 3px;
+    border-radius: 25px;
+    background-color: #1f1f1f;
+}
+
+.projectsZoom {
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/Dice.jpg");
+    background-position: center;
+    background-size: cover;
+    transition: all .5s;
+}
+
+.projects:hover .projectsZoom {
+    transform: scale(1.2);
+    opacity: 0.1;
+}
+
+.projects:hover .workText {
+    visibility: visible;
+}
+
+.charity {
+    height: 24vh;
+    overflow: hidden;
+    background-color: black;
+}
+
+#charityMobile {
+    height: 28vh;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    border: #c0aa8f solid 3px;
+    border-radius: 25px;
+    background-color: #1f1f1f;
+}
+
+.workMobileInside {
+    border: #57e255 solid 1px;
+    height: 23vh;
+    width: 91%;
+    margin: 2vh;
+}
+
+.charityZoom {
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/GTISmall.JPG");
+    background-position: center;
+    background-size: cover;
+    transition: all .5s;
+}
+
+.charity:hover .charityZoom {
+    transform: scale(1.2);
+    opacity: 0.1;
+}
+
+.charity:hover .workText {
+    visibility: visible;
+}
+
+.test {
+    margin: 2vh;
+    border: #c0aa8f solid 3px;
+    border-radius: 25px;
+    background-color: #1f1f1f;
+}
+
+.testInside {
+    margin: 2vh;
+    border: #4baf49 solid 3px;
+    border-radius: 1%;
+}
+
+#contactTitle {
+    height: 100vh;
+    background-image: url("../images/Contact3.jpg");
+    background-size: cover;
+}
+
+#contactContent {
+    height: 100vh;
+    background-color: #1f1f1f;
+}
+
+.contactContentText {
+    margin-top: 10%;
+    margin-bottom: 4%;
+    margin-left: 4%;
+    margin-right: 4%;
+    font-family: 'Turret Road', cursive;
+    font-size: 2vw;
+    color: #57e255;
+}
+
+.aboutTitleText {
+    position: absolute;
+    font-family: 'Turret Road', cursive;
+    font-size: 10vw;
+    color: aliceblue;
+    top: 38vh;
+    left: 12vw;
+    text-shadow:
+            -4px -4px 4px #000000,
+            4px -4px 4px #000000,
+            -4px 4px 4px #000000,
+            4px 4px 4px #000000;
+}
+
+.workTitleText {
+    position: absolute;
+    font-family: 'Turret Road', cursive;
+    font-size: 10vw;
+    color: aliceblue;
+    top: 38vh;
+    left: 12vw;
+    text-shadow:
+            -4px -4px 4px #000000,
+            4px -4px 4px #000000,
+            -4px 4px 4px #000000,
+            4px 4px 4px #000000;
+}
+
+.contactTitleText {
+    position: absolute;
+    font-family: 'Turret Road', cursive;
+    font-size: 10vw;
+    color: aliceblue;
+    top: 38vh;
+    left: 6vw;
+    text-shadow:
+            -4px -4px 4px #000000,
+            4px -4px 4px #000000,
+            -4px 4px 4px #000000,
+            4px 4px 4px #000000;
+}
+
+@media only screen and (max-width: 1200px) {
+
+    #introCenter {
+        height: 40%;
+        width: 100%;
+        top: 32%;
+        left: 1vw;
+    }
+
+    #introMiddle {
+        top: 3vw;
+        font-size: 8vw;
+    }
+
+    #introTop {
+        display: none;
+    }
+
+    #introBot {
+        top: 15vw;
+        font-size: 5vw;
+    }
+
+    #navBox {
+        height: 8vw;
+        width: 100%;
+        font-size: 5vw;
+    }
+
+    .workLinkDesktop {
+        display: none;
+    }
+
+    .workLinkMobile {
+        display: block;
+    }
+
+    #aboutTitle {
+        height: 30vw;
+    }
+    .aboutTitleText {
+        font-size: 15vw;
+        top: 3vh;
+        left: 28vw;
+    }
+    #aboutContent {
+        height: 120vw;
+    }
+
+    .aboutContentText {
+        font-size: 4.5vw;
+    }
+
+
+    .workMobile {
+        display: block;
+    }
+    .workDesktop {
+        display: none;
+    }
+    .workTitle {
+        height: 30vw;
+    }
+    .workTitleText {
+        font-size: 15vw;
+        top: 3vh;
+        left: 28vw;
+    }
+
+
+
+
+
+    #contactTitle {
+        height: 30vw;
+    }
+    .contactTitleText {
+        font-size: 15vw;
+        top: 3vh;
+        left: 20vw;
+    }
+    #contactContent {
+        height: 120vw;
+    }
+    .contactContentText {
+        font-size: 5vw;
+    }
+}
+
+.leftArrow {
+    position: absolute !important;
+    left: -5vw !important;
+}
+
+.rightArrow {
+    position: absolute !important;
+    right: -5vw !important;
+}
+
+.modalText {
+    padding-top: 2vw;
+}
+
+#professionalModalPicture1 {
+    background-image: url("../images/ColeModal.png");
+    background-size: contain;
+    width: 76vw;
+    height: 34vw;
+}
+
+#professionalModalPicture2 {
+    background-image: url("../images/iGrowModal.png");
+    background-size: contain;
+    width: 76vw;
+    height: 34vw;
+}
+
+#projectsModalPicture1 {
+    background-image: url("../images/ColorGame.png");
+    background-size: contain;
+    width: 76vw;
+    height: 34vw;
+}
+
+#projectsModalPicture2 {
+    background-image: url("../images/Dice.jpg");
+    background-size: contain;
+    width: 76vw;
+    height: 34vw;
+}
+
+#projectsModalPicture3 {
+    background-image: url("../images/projectModalPicture3.JPG");
+    background-size: contain;
+    width: 76vw;
+    height: 34vw;
+}
+
+#projectsModalPicture4 {
+    background-image: url("../images/projectModalPicture4.JPG");
+    background-size: contain;
+    width: 76vw;
+    height: 34vw;
+}
+
+#projectsModalPicture5 {
+    background-image: url("../images/projectModalPicture5.PNG");
+    background-size: contain;
+    width: 76vw;
+    height: 34vw;
+}
+
+#charityModalPicture1 {
+    background-image: url("../images/GTIModal.png");
+    background-size: contain;
+    width: 76vw;
+    height: 34vw;
+}
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 65px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #242424;
+    margin: auto;
+    padding-left: 8vw;
+    padding-right: 8vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    border: 1px solid #000000;
+    width: 80vw;
+    color: aliceblue;
+    font-size: 2.5vh;
+}
